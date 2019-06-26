@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    font-family: 'Hind Vadodara', sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* MENU */
+
+/*menu fijo */
+
+.menu {
+    background: rgb(252, 251, 251);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+/* fin fijo*/
+
+.content-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.content-menu img {
+    width: 50px;
+}
+
+.content-menu nav  ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(54, 52, 52);
+}
+
+/*   ******  HEADER  ****** */
+
+/* CONTENT HEADER */
+
+#header-content {
+    background: #121A21;
+    margin-bottom: 20px;
+    position: relative;
+
+    margin-top: 60px;
+}
+
+.header-content-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.titles-flex {
+    width: 70%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.titles-links {
+    margin-bottom: 15px;
+}
+
+.titles-links a {
+    color: #F6AB09;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+.titles-flex h3 {
+    margin: 0;
+    font-size: 25px;
+    color: #fff;
+}
+
+.titles-flex p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.title-buttons {
+    margin-top: 20px;
+}
+
+.title-buttons a{
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: rgb(22, 204, 195);
+    border: 1px solid lightblue;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+/* CARD FIXED */
+
+#card-fixed {
+    width: 350px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    
+    box-shadow: .5px .5px 2px  0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    position: fixed;
+    top: 90px;
+    right: 20px;
+}
+
+#card-fixed .fondo {
+ width: 100%;
+ position: relative;
+}
+
+.fondo .img-user-circle {
+    width: 70px;
+    position: absolute;
+    bottom: -30px;
+    left: 40%;
+}
+
+.fondo .img-fondo {
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+}
+
+.card-content {
+    background: #fff;
+    margin-top: 40px;
+}
+
+.card-content h4 {
+    color: gray;
+}
+
+.card-content p {
+    color: rgb(10, 121, 158);
+    font-weight: bold;
+}
+
+.card-content a {
+    background: #F6AB09;
+    text-decoration: none;
+    padding: 15px;
+    width: 100%;
+    color: #fff;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+h3, h4 {
+    margin: 0;
+}
+
+
+/* SECTION RELLENO */
+
+section .section-relleno {
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+}

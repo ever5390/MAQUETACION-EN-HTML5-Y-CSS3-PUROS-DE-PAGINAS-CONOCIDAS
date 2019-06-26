@@ -1,0 +1,2 @@
+Ela archivo js min, sale de la carpeta owlcarousel/dist
+Los otros dos .css salen de dist/assets. 
