@@ -28,6 +28,17 @@ li {
 }
 
 /* Navegación */
+
+/*fixed */
+
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #fff;
+    }
+/*fin fixed*/
+
 .navegador {
     display: flex;
     flex-wrap: wrap;
@@ -99,8 +110,7 @@ li {
 .contenedor-principal {
     background: #FAFAFA;
     display: flex;
-
-    overflow-y: scroll;
+    margin-top: 50px; /* por el fixed del menú */
     height: calc(100vh - 50px);
 }
 
@@ -108,9 +118,11 @@ li {
 
 aside {
     height: calc(100vh - 50px);
-    overflow: scroll;
+    overflow-y: scroll;
     width: 240px;
     background: rgb(243, 243, 243);
+
+    position: fixed;
 }
 
 .aside-bloque{
@@ -149,6 +161,8 @@ aside {
 .seccion-principal {
     width: 90%;
     margin: 0 auto;
+    
+    margin-left: 250px;
 }
 
 .videos-contenidos {
