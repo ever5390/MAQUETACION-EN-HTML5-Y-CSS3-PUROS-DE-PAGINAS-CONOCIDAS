@@ -1,0 +1,68 @@
+DECLARE
+    mi_variable VARCHAR(10) := "Tineo";
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('Paciencia amigo ' || mi_variable);
+EXCEPTION
+    WHEN OTHERS THEN
+    null;
+END;
+/
+
+/* IF ELSE */
+
+DECLARE
+    mi_numero number(5) := 10;
+BEGIN
+    if(mi_numero > 10) {
+        dbms_outpub.pu_line("Es mayor a 10");
+    } else {
+        DBMS_OUTPUT.PUT_LINE("Es menor o igual a 10");
+    }
+END;
+/
+DECLARE
+    mi_numero2(5) := &numero_a_solicitar;
+BEGIN
+    DBMS_OUTPUT.PUT_LINE("El número introducido es : " || mi_numero2);
+END;
+/
+//o también se puede colocar ejecutando DIRECTAMENTE:
+
+DECLARE
+BEGIN
+    DBMS_OUTPUT.PUT_LINE("El número introducido es: " || &numero_introducito_dos);
+END;
+/
+
+/* WHILLE */
+
+DECLARE
+    mi_numero3 number(10):= 15;
+BEGIN
+    WHILE( mi_numero3 < 20 )
+    LOOP
+        DBMS_OUTPUT.PUT_LINE(mi_numero3);
+        mi_numero3 := mi_numero3 + 1;
+    END LOOP;
+END;
+
+/* FOR */
+
+BEGIN 
+    FOR numero_4 IN REVERSE 1..10;
+    LOOP
+        DBMS_OUTPUT.PUT_LINE(numero_4);
+    END LOOP;
+END;
+
+/* LOOP */
+
+DECLARE
+    mi_numero4 number(5) := 15;
+BEGIN
+    LOOP
+        EXIT WHEN mi_numero4 = 10;
+        DBMS_OUTPUT.PUT_LINE(mi_numero4);
+        mi_numero4 := mi_numero4 + 1;
+    END LOOP;
+END;
